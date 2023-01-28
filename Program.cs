@@ -23,7 +23,7 @@
         {
             for (int i = 0; i < strA.Length; i++)
             {
-                if ($"{strA[i]}".Length < $"{strB[0]}".Length)
+                if (strA[i].Length < strB[0].Length)
                 {
                     strB[0] = strA[i];
                 }
@@ -106,30 +106,7 @@
             var Res = FindMax(MaxData, StrMax);
 
             OutMax(MaxData, Res);
-
-            //for (int i = 0; i < MinData.Length; i++)
-            //{                
-            //    if ($"{MinData[i]}".Length < $"{StrMin}".Length)
-            //    {
-            //         StrMin = MinData[i];
-            //    }                
-            //}
-            //Console.WriteLine($"Ответ: {StrMin}");
-
-
-
-            //for (int i = 0; i < MaxData.Length; i++)
-            //{
-            //    if (MaxData[i].Length > StrMax.Length)
-            //    {
-            //        StrMax = MaxData[i];
-            //    }
-            //}
-            //for (int i = 0; i < MaxData.Length; i++)
-            //{
-            //    if (StrMax.Length == MaxData[i].Length) Console.Write($"{MaxData[i]}   ");
-            //}
-
+           
         }
     }
 }
